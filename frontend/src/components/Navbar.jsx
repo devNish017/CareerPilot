@@ -3,8 +3,8 @@ import img1 from '../assets/logo1.png'
 function Navbar() {
   return (
     <>
-    <div>
-<div className="navbar bg-base-100 shadow-sm">
+    
+<div className="navbar bg-base-100 shadow-sm sticky top-0 z-50 ">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -23,7 +23,7 @@ function Navbar() {
     </div>
     <div  className='flex  w-40'> 
       <img className='h-12 w-12 hidden md:block ' src={img1}/>
-    <a className="btn btn-ghost text-[14px] md:text-md md:w-fit  font-bold ">AI Resume & Placement Tracker</a>
+    <a className="btn btn-ghost text-[14px] md:text-xl md:w-fit  font-bold ">Carrer Pilot</a>
     </div>
   </div>
   <div className="navbar-center hidden lg:flex">
@@ -40,7 +40,7 @@ function Navbar() {
   </div>
 </div>
         
-    </div>
+    
     
     </>
   )

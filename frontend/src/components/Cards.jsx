@@ -1,24 +1,17 @@
 import React from 'react'
 
-function Cards() {
+function Cards(props) {
   return (
    <>
    <div>
 
-<div className="hover-3d">
-  {/* content */}
-  <figure className="max-w-100 rounded-2xl">
-    <img src="https://img.daisyui.com/images/stock/creditcard.webp" alt="3D card" />
-  </figure>
-  {/* 8 empty divs needed for the 3D effect */}
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
-  <div></div>
+      <div className="card bg-base-100 w-70 mx-3.5 shadow-sm mt-3.5 transition duration-300 ease-in-out hover:scale-110 cursor-pointer">
+  <div className="card-body">
+    <img src={props.icon} className='h-15 w-15 mx-auto'/>
+    <h2 className="card-title">{props.title}</h2>
+    <p>{props.desc}</p>
+    
+  </div>
 </div>
 
    </div>
